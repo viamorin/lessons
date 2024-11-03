@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .quantity-goods h1 {
+    margin: 0;
+  
+    /* Ваш код */
+  }
+  
+  .quantity {
+    color: #888888;
+    font-size: 16px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+  
+    /* Ваш код */
+  }
+  
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    flex-grow: 1;
+    
+  
+    /* Ваш код */
+  }
+  
+  .product-card img {
+    width: 100px;
+  }
+  
+  .title-good {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .price-good {
+    margin: 5px 0 0;
+    color: #888888;
+    text-align: center;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* Ваш код */
+  }
+  .wrapper-products {
+      display: flex;
+        gap: 15px;
+    
+  }
+  .active {
+      background: #2ecc71;
+        color: #ffffff;
+  }
+  
+  h1 {
+      font-weight: bold;
+        font-size: 24px;
+  }
+  /* Ваш код */
