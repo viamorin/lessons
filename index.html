@@ -3,39 +3,56 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
-  <header>
-    <img class="header__logo" src='/img/logo.svg'>
-    <div class="header__controls">
-      <a href="#contacts">Контакты</a>
-      <button>Заказать</button>
+  <header class="header-wrapper">
+    <div class="container">
+      <div class="header">
+        <img class="header__logo" src='/img/logo.svg'>
+
+        <div class="header__controls">
+          <a href="#contacts">Контакты</a>
+          <button>Заказать</button>
+        </div>
+      </div>
+
     </div>
+
   </header>
 
-  <section class="about">
-    <div class="about__info">
-      <h1>Солнечные панели GreenRobotic</h1>
-      <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-      <button>Узнать подробнее</button>
-    </div>
-    <div class="about__images">
-      <img class="about__sun-image spinner" src="img/sun.png">
-      <img class="about__image" src="img/solar-panel.png">
+  <section class="about-wrapper ">
+    <div class="container">
+      <div class="about">
+        <div class="about__info animate__animated animate__fadeInLeft animate__slow ">
+          <h1>Солнечные панели GreenRobotic</h1>
+          <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
+          <button>Узнать подробнее <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        
+        <div class="about__images animate__animated animate__fadeInRight animate__slow">
+          <img class="about__sun-image spinner" src="img/sun.png">
+          <img class="about__image" src="img/solar-panel.png">
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="form">
-    <div class="form__container">
+    <div class="container form__container">
       <h1>Оставьте свои контакты</h1>
       <p>Поможем подобрать модель. Выбрать удобный вариант доставки и установки. Гарантия возврата денег.</p>
-      
+
       <form>
         <div class="form__group">
           <label for="name">Ваше имя</label>
@@ -68,8 +85,8 @@
     </div>
   </section>
 
-  <footer>
-    <div class="footer__container">
+  <footer class="footer-wrapper">
+    <div class="container footer">
       <div class="footer__group">
         <h3>Позвонить нам:</h3>
 
@@ -98,6 +115,7 @@
 
     <div class="footer__copyright">GreenCorp © 2021</div>
   </footer>
+  <script src="https://kit.fontawesome.com/23dd275efd.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
