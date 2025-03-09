@@ -1,0 +1,168 @@
+** {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #15141f;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.content {
+  padding: 26px;
+  height: 100vh;
+  background-color: #eaebed;
+}
+
+.top-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.search {
+  position: relative;
+  width: 237px;
+}
+
+.search .button-search {
+  cursor: default;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input::-moz-placeholder {
+  color: #a6a6a6;
+  opacity: 1;
+}
+input:-ms-input-placeholder {
+  color: #a6a6a6;
+}
+input::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+
+.search-input {
+  width: 100%;
+  padding: 11px 41px 11px 11px;
+  color: #a6a6a6;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid white;
+}
+
+.search-input:focus {
+  border: 1px solid black;
+}
+
+.table {
+  margin-bottom: 48px;
+}
+
+.table *:last-child {
+  margin-bottom: 0;
+}
+
+.table-row-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0 16px;
+  justify-content: space-between;
+  padding: 7px 12px;
+  border-radius: 10px;
+  margin-bottom: 11px;
+  background-color: #d7dade;
+}
+
+.table-row-data {
+  display: flex;
+  padding: 0px 12px;
+  margin-bottom: 18px;
+  align-items: baseline;
+  gap: 0 16px;
+  justify-content: space-between;
+}
+
+.head {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number-head {
+  max-width: 16px;
+  min-width: 16px;
+}
+
+.fio-head {
+  min-width: 70px;
+  max-width: 255px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.table-row-head .fio-head,
+.table-row-head .email-head {
+  display: flex;
+}
+
+.email-head {
+  min-width: 66px;
+  max-width: 145px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.age-head {
+  max-width: 60px;
+  min-width: 35px;
+}
+
+.spacer {
+  min-width: 16px;
+  max-width: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 16px;
+  }
+  .table-row-head {
+    padding: 7px 10px;
+  }
+  .table-row-data {
+    padding: 0px 10px;
+  }
+  .top-panel {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+  .add-button {
+    padding: 11px 9.5px;
+  }
+  .search-input {
+    padding: 5px 30px 5px 5px;
+  }
+  .search .button-search {
+    top: 8px;
+    right: 8px;
+  }
+}

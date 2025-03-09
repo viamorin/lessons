@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="top-panel">
+        <label class="search">
+          <input
+            id="search-input"
+            class="search-input"
+            type="text"
+            placeholder="Поиск по имени"
+          />
+          <button type="button" class="button-search">
+            <svg
+              class="search-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                opacity="0.3"
+                d="M6.47238 12.9448C7.87796 12.9448 9.17412 12.4903 10.2346 11.7328L14.2241 15.7223C14.4093 15.9074 14.6533 16 14.9143 16C15.4613 16 15.8485 15.5792 15.8485 15.0405C15.8485 14.788 15.7643 14.5439 15.5792 14.3672L11.6149 10.3945C12.4482 9.30037 12.9448 7.94529 12.9448 6.47238C12.9448 2.91215 10.0326 0 6.47238 0C2.92057 0 0 2.90373 0 6.47238C0 10.0326 2.91215 12.9448 6.47238 12.9448ZM6.47238 11.5476C3.6949 11.5476 1.39716 9.24987 1.39716 6.47238C1.39716 3.6949 3.6949 1.39716 6.47238 1.39716C9.24987 1.39716 11.5476 3.6949 11.5476 6.47238C11.5476 9.24987 9.24987 11.5476 6.47238 11.5476Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </label>
+      </div>
+      <div class="table">
+        <div class="table-row-head">
+          <div class="head number-head">№</div>
+          <div class="head fio-head">Ф.И.О.</div>
+          <div class="head email-head">Email</div>
+          <div class="head age-head">Возраст</div>
+          <div class="head spacer"></div>
+        </div>
+        <div id="result"></div>
+      </div>
+      <div class="bottom-panel">
+        <div class="filter">
+          <p class="text-filter">Отфильтровать по возрасту:</p>
+          <div class="wrapper-input">
+            <input
+              id="sort-from-input"
+              class="input-filter input-from"
+              placeholder="от"
+              type="number"
+            />
+            <input
+              id="sort-to-input"
+              class="input-filter input-to"
+              placeholder="до"
+              type="number"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

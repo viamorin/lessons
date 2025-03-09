@@ -1,5 +1,6 @@
 const INCREASE_NUMBER_ANIMATION_SPEED = 50;
 
+// анимация увелечения числа клиентов
 function increaseNumberAnimationStep(i, element, endNumber) {
     if (i <= endNumber) {
         if (i === endNumber) {
@@ -16,27 +17,11 @@ function increaseNumberAnimationStep(i, element, endNumber) {
     }
 };
 
-const clientsCount = document.querySelector('.features__clients-count')
+const clientsCount = document.querySelector('.features__clients-count');
 
-increaseNumberAnimationStep(0, clientsCount, 5000);
 
-let title = document.createElement("h1");
-title.innerHTML = "Самая важная страница на свете!";
-title.id = "my-title";
-title.className = "caption red";
 
-let paragraph = document.createElement("p");
-paragraph.innerText = "Text here";
-
-let link = document.createElement("a");
-link.innerText = "link";
-link.href = "";
-
-let paragraph2 = document.createElement("p");
-paragraph2.innerText = "More text";
-
-document.body.append(title, link, paragraph, paragraph2);
-
+// добавляем вариант "другое", чтоб клиент сам ввел нужное ему число
 document.querySelector('#budget').addEventListener('change', function
     handleSelectChange(event) {
     if (event.target.value === 'other') {
@@ -53,9 +38,30 @@ document.querySelector('#budget').addEventListener('change', function
         document.querySelector('.form form').insertBefore(formContainer, document.querySelector('.form__submit'));
     }
     const otherInput = document.querySelector('.form__other-input');
-    
+
     if (event.target.value !== 'other' && otherInput) {
-        // Удаляем ранее добавленное текстовое поле, если оно есть в DOM
         document.querySelector('.form form').removeChild(otherInput);
     }
 });
+
+let animationInited = false;
+
+//анимация увелечения клиентов, происходит когда мы увидим этот элемент
+function updateScroll() {
+    const header = document.querySelector('.header-wrapper');
+    if (window.scrollY > 0) {
+        header.classList.add('header__scrolled');
+    } else {
+        header.classList.remove('header__scrolled');
+    }
+    let windowBottomPosition = window.scrollY + window.innerHeight;
+    let countElementPosition = document.querySelector('.features__clients-count').offsetTop;
+
+    if (windowBottomPosition >= countElementPosition && !animationInited) {
+        increaseNumberAnimationStep(0, clientsCount, 5000);
+        animationInited = true;
+    }
+}
+window.addEventListener('scroll', updateScroll)
+
+
