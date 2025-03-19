@@ -1,0 +1,93 @@
+.header {
+  display: grid;
+  gap: 24px;
+  text-align: center;
+  color: #111827;
+  height: 192px;
+  padding: 24px 192px;
+  background-color: #f9fafb;
+}
+
+.header__wrapper {
+  margin: 0 auto;
+  width: 1536px;
+}
+
+.imageLogo {
+  text-align: left;
+  width: 50px;
+  height: 74px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 1536px; */
+  height: 76px;
+}
+
+.header__topLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 4px;
+  width: 305px;
+  height: 74px;
+}
+
+.nameCompany {
+  font-size: 24px;
+  line-height: 32px;
+  vertical-align: middle;
+  transition: color 0.3s;
+}
+
+.nameCompany:hover {
+  color: #a78bfa;
+}
+
+.header__topContact {
+  display: flex;
+  max-width: 716px;
+  height: 76px;
+  display: flex;
+  gap: 12px;
+}
+
+.header__course {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: right;
+  border-right: 1px solid #a78bfa;
+  padding-right: 20px;
+}
+
+.header__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 343px;
+  height: 76px;
+}
+
+.header__contactNumber {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 900;
+}
+
+.header__contactFree {
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.header__bottom {
+  display: flex;
+  max-width: 1536px;
+  height: 44px;
+  justify-content: space-between;
+  text-align: center;
+}
