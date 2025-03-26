@@ -1,0 +1,61 @@
+.footer {
+  color: #f9fafb;
+  background-color: #111827;
+}
+.footer__wrapper {
+  display: grid;
+  gap: 24px;
+  padding: 24px 0px;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__topLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 4px;
+}
+.imageLogo {
+  text-align: left;
+  width: 50px;
+  height: 74px;
+}
+.nameCompany {
+  font-size: 24px;
+  line-height: 32px;
+  vertical-align: middle;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #a78bfa !important;
+}
+.nameCompany:hover {
+  color: #a78bfa;
+}
+
+.header__topContact {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__contactNumber {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 900;
+  color: #f9fafb;
+}
+.footer__contactFree {
+  color: #f9fafb;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400px;
+}
+.menu a {
+  color: #f9fafb !important;
+  transition: color 0.3s;
+}

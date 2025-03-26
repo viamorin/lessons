@@ -1,9 +1,10 @@
 .header__menu {
   display: flex;
   gap: 24px;
-  width: 372px;
-  height: 24px;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  color: inherit;
+}
+a {
+  text-decoration: none;
 }

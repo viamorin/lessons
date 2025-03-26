@@ -1,13 +1,13 @@
 import React from 'react';
 import Menu from '../Menu/Menu';
 import styles from './Header.module.css';
-import logo from './Vector.png';
+import logo from './logo.svg';
 import Button from '../UI/Button/Button';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.header__wrapper}>
+      <div className={`container ${styles.header__wrapper} `}>
         <div className={styles.header__top}>
           <div className={styles.header__topLogo}>
             <img src={logo} alt="Logo" className={styles.imageLogo} />

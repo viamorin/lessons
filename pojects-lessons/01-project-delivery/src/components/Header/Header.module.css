@@ -1,16 +1,13 @@
 .header {
-  display: grid;
-  gap: 24px;
-  text-align: center;
   color: #111827;
-  height: 192px;
-  padding: 24px 192px;
   background-color: #f9fafb;
+  width: 100vw;
 }
 
 .header__wrapper {
-  margin: 0 auto;
-  width: 1536px;
+  display: grid;
+  gap: 24px;
+  padding: 24px 0px;
 }
 
 .imageLogo {
@@ -22,8 +19,6 @@
 .header__top {
   display: flex;
   justify-content: space-between;
-  /* max-width: 1536px; */
-  height: 76px;
 }
 
 .header__topLogo {
@@ -32,8 +27,6 @@
   justify-content: center;
   display: flex;
   gap: 4px;
-  width: 305px;
-  height: 74px;
 }
 
 .nameCompany {
@@ -48,9 +41,6 @@
 }
 
 .header__topContact {
-  display: flex;
-  max-width: 716px;
-  height: 76px;
   display: flex;
   gap: 12px;
 }
@@ -68,8 +58,6 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 343px;
-  height: 76px;
 }
 
 .header__contactNumber {
@@ -86,8 +74,5 @@
 
 .header__bottom {
   display: flex;
-  max-width: 1536px;
-  height: 44px;
   justify-content: space-between;
-  text-align: center;
 }

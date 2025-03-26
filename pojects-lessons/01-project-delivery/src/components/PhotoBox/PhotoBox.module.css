@@ -1,0 +1,36 @@
+.firstModule {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #111827;
+  justify-content: space-between;
+}
+
+.word {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.photoModule {
+  border-radius: 16px;
+  text-align: left;
+}
+
+.textMain {
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 900;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.text {
+  font-size: 20px;
+  text-align: left;
+}
+
+.photoModule__img {
+  display: block;
+  width: 100%;
+}
