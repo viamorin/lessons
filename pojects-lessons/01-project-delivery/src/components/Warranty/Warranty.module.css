@@ -1,6 +1,5 @@
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 20px;
 }
 
@@ -15,4 +14,18 @@
 
 .button Button {
   padding: 16px 28px;
+}
+
+@media (max-width: 1536px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1537px) {
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

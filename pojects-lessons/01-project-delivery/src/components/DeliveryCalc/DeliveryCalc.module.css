@@ -3,3 +3,27 @@
   gap: 24px;
   grid-template-columns: repeat(2, 1fr);
 }
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 1536px) {
+  .wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}

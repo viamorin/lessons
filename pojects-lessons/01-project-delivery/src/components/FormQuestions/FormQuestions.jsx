@@ -26,64 +26,59 @@ const FormQuestions = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.container}>
-      <div className={styles.gridcontainer}>
-        <input
-          className={styles.input}
-          placeholder="Имя"
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
+    <form onSubmit={handleSubmit} className={styles.gridcontainer}>
+      <input
+        className={styles.input}
+        placeholder="Имя"
+        type="text"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+      />
 
-        <input
-          className={styles.input}
-          placeholder="Почта"
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+      <input
+        className={styles.input}
+        placeholder="Почта"
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
 
-        <input
-          className={styles.input}
-          placeholder="Телефон"
-          type="tel"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          pattern="\+?[0-9\s\-\(\)]+"
-          required
-        />
+      <input
+        className={styles.input}
+        placeholder="Телефон"
+        type="tel"
+        name="phone"
+        value={formData.phone}
+        onChange={handleChange}
+        pattern="\+?[0-9\s\-\(\)]+"
+        required
+      />
 
-        <input
-          className={styles.input}
-          placeholder="Тема вопроса"
-          type="text"
-          name="theme"
-          value={formData.theme}
-          onChange={handleChange}
-          required
-        />
+      <input
+        className={styles.input}
+        placeholder="Тема вопроса"
+        type="text"
+        name="theme"
+        value={formData.theme}
+        onChange={handleChange}
+        required
+      />
 
-        <input
-          className={styles.item}
-          placeholder="Сообщение..."
-          type="text"
-          name="messages"
-          value={formData.messages}
-          onChange={handleChange}
-          required
-        />
-        <div className={styles.items}>
-          <Button
-            type="submit"
-            name="Оставить заявку"
-          />
-        </div>
+      <input
+        className={styles.item}
+        placeholder="Сообщение..."
+        type="text"
+        name="messages"
+        value={formData.messages}
+        onChange={handleChange}
+        required
+      />
+      <div className={styles.items}>
+        <Button type="submit" name="Оставить заявку" />
       </div>
     </form>
   );

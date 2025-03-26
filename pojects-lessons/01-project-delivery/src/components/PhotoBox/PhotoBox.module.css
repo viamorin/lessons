@@ -1,9 +1,19 @@
 .firstModule {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 16px;
   color: #111827;
   justify-content: space-between;
+}
+@media (max-width: 1536px) {
+  .firstModule {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1920px) {
+  .firstModule {
+    grid-template-rows: repeat(2, auto);
+  }
 }
 
 .word {
@@ -23,6 +33,12 @@
   font-weight: 900;
   text-align: left;
   vertical-align: middle;
+}
+@media (max-width: 1536px) {
+  .textMain {
+    font-size: 32px;
+    line-height: 42px;
+  }
 }
 
 .text {

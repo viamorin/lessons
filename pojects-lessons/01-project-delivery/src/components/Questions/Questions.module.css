@@ -1,9 +1,18 @@
 .wrapper {
   background-color: #f9fafb;
-  padding:  64px 0px;
+  padding: 64px 0px;
   border-radius: 16px;
-  
+  width: 1536px;
+  margin: 0 auto;
+  align-items: center;
 }
-.title{
-    margin-bottom: 32px;
+.title {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1536px) {
+  .wrapper {
+    width: 994px;
+    margin: 0 auto;
+  }
 }

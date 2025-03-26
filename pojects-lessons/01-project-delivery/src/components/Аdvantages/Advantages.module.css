@@ -11,4 +11,16 @@
   font-weight: 900;
   margin-bottom: 50px;
 }
- 
+@media (max-width: 1536px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1920px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
